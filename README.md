@@ -1,4 +1,4 @@
-# ATC Simulator (Task 1)
+# ATC Simulator
 
 A 2D vector-based Air Traffic Control (ATC) simulator written in Python. This project focuses on radar rendering, collision detection algorithms, and Object-Oriented Programming software architecture.
 
