@@ -41,9 +41,9 @@ Select an aircraft to access the tactical command panel:
 * `SPACE`: Pause / Resume the simulation.
 * `1` to `5`: Set simulation speed from 1x to 5x.
 * `0`: Fast-forward mode (20x speed).
-* `ENTER`: Open/Close the Command Line Interface (CLI).
+* `ENTER`: Open/Close the Command Line Interface.
 
-### 💻 Command Line Interface (CLI)
+### 💻 Command Line Interface
 Press `ENTER` to activate the CLI at the top left. Issue rapid text commands using the format: `[CALLSIGN] [CMD] [VALUE]`
 * **Heading:** `CPA924 H 270`
 * **Speed:** `CPA924 S 220`
