@@ -11,10 +11,10 @@ The simulator leverages VBO to render tens of thousands of map geometries seamle
 
 ## ✨ Key Features & Technical Highlights
 
-* **Strict MVC Architecture:** Logic modules handle autonomous physics and routing, while isolated rendering pipelines manage the GUI and GPU drawing independently.
-* **Smart LNAV Routing (Dijkstra's Algorithm):** Aircraft feature autonomous route recovery. If an aircraft is vectored off-course and instructed to resume navigation, the system uses Dijkstra's shortest-path algorithm to dynamically determine the optimal forward-facing waypoint to reconnect to the STAR/SID procedure.
-* **Advanced Safety Systems (TCAS & STCA):** Continuous background matrix calculations predict Short-Term Conflict Alerts up to 120 seconds in advance, drawing visual prediction lines. Features full Wake Turbulence detection and  TCAS alert.
-* **Text-to-Speech (TTS) Integration:** Fully threaded, asynchronous [pyttsx3](https://github.com/nateshmbhat/pyttsx3) integration for automated ATC clearances and pilot readbacks without interrupting the main game loop.
+* **MVC Architecture:** Logic modules handle autonomous physics and routing, while isolated rendering pipelines manage the GUI and GPU drawing independently.
+* **LNAV Routing (Dijkstra's Algorithm):** Aircraft feature autonomous route recovery. If an aircraft is vectored off-course and instructed to resume navigation, the system uses Dijkstra's shortest-path algorithm to dynamically determine the optimal forward-facing waypoint to reconnect to the STAR/SID procedure.
+* **Safety Systems (TCAS & STCA):** Continuous background matrix calculations predict Short-Term Conflict Alerts up to 120 seconds in advance, drawing visual prediction lines. Features full Wake Turbulence detection and  TCAS alert.
+* **Text-to-Speech (TTS):** Fully threaded, asynchronous [pyttsx3](https://github.com/nateshmbhat/pyttsx3) integration for automated ATC clearances and pilot readbacks without interrupting the main game loop.
 * **ILS & Glideslope Tracking:** Automated Localizer and Glideslope interception logic utilizing proportional navigation for smooth final approaches.
 
 ---
