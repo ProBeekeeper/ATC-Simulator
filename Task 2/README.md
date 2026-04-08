@@ -36,24 +36,3 @@
 * Python 3.x
 * Pygame library
 
-### Setup
-1. Clone the repository:
-   ```bash
-   git clone <your-github-link>
-Install dependencies:
-
-Bash
-pip install pygame
-Run the game:
-
-Bash
-python main_en.py
-5. Project Structure
-
-dsu.py: Implementation of the Disjoint Set Union class with optimizations.
-
-
-game.py: Main game logic, UI rendering, and Kruskal's algorithm implementation.
-
-
-main_en.py: The entry point for the application
