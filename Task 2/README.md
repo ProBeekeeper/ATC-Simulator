@@ -66,6 +66,6 @@ A data structure that tracks a set of elements partitioned into a number of disj
 
 Watch our 5-minute introduction video to see the Road Connector in action, understand the gameplay, and learn about the underlying algorithms:
 
-[![Watch the Video](https://img.shields.io/badge/Watch-Demo_Video-red?style=for-the-badge&logo=youtube)](INSERT_YOUR_VIDEO_LINK_HERE)
+[![Watch the Video](https://img.shields.io/badge/Watch-Demo_Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/k4H8h2TtRI8)
 
 *(Note: Click the badge above to watch the project demonstration.)*
