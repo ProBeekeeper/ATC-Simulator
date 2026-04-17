@@ -1,21 +1,42 @@
 # 📡 Project VHHH
 
-A high-performance, 2D vector-based Air Traffic Control simulator written in Python. This project simulates the Hong Kong Terminal Maneuvering Area, focusing on radar rendering, automated Flight Management Computer logic, collision prediction algorithms, and Object-Oriented Programming architecture.
+🎥 **[Click Here to Watch the Gameplay & Introduction Trailer](https://youtu.be/R9dOkh-zBvM)**
+
+An Air Traffic Control simulator written in Python. Designed as an authentic training environment for those aspiring to join the Air Traffic Control industry, this project simulates the complex Hong Kong Terminal Maneuvering Area. To ensure absolute realism, all aeronautical data is sourced directly from the latest **[Hong Kong Civil Aviation Department eAIP](https://www.ais.gov.hk/)**. Furthermore, all navigational and airspace data is structured in simple `JSON` files, meaning future AIRAC cycle updates are as easy as replacing a text file.
 
 ## 👥 Project Members
 [KaiWang Wu](https://github.com/ProBeekeeper), [ShingYung Chan](https://github.com/xTeStX1), [KinLam Chan](https://github.com/chakila0603)
 
 ## 🎯 Project Overview
-Project VHHH is a real-time approach-and-departure radar control simulation. The primary objective is to sequence and direct aircraft to the active runways while strictly maintaining standard separation minimums.
-The simulator leverages VBO to render tens of thousands of map geometries seamlessly alongside interactive UI panels, ensuring a stable 60 FPS experience.
+Project VHHH is a real-time approach-and-departure radar control simulation. The primary objective is to sequence and direct aircraft to the active runways while strictly maintaining standard separation minimums. 
 
 ## ✨ Key Features & Technical Highlights
 
 * **MVC Architecture:** Logic modules handle autonomous physics and routing, while isolated rendering pipelines manage the GUI and GPU drawing independently.
 * **LNAV Routing (Dijkstra's Algorithm):** Aircraft feature autonomous route recovery. If an aircraft is vectored off-course and instructed to resume navigation, the system uses Dijkstra's shortest-path algorithm to dynamically determine the optimal forward-facing waypoint to reconnect to the STAR/SID procedure.
-* **Safety Systems (TCAS & STCA):** Continuous background matrix calculations predict Short-Term Conflict Alerts up to 120 seconds in advance, drawing visual prediction lines. Features full Wake Turbulence detection and  TCAS alert.
+* **Safety Systems (TCAS & STCA):** Continuous background matrix calculations predict Short-Term Conflict Alerts up to 120 seconds in advance, drawing visual prediction lines. Features full Wake Turbulence detection and TCAS alert.
 * **Text-to-Speech:** Fully threaded, asynchronous [pyttsx3](https://github.com/nateshmbhat/pyttsx3) integration for automated ATC clearances and pilot readbacks without interrupting the main game loop.
 * **ILS & Glideslope Tracking:** Automated Localizer and Glideslope interception logic utilizing proportional navigation for smooth final approaches.
+
+---
+
+## 🚀 Installation & Quick Start
+
+### Option 1: Download & Play (Windows)
+The easiest way to jump into the radar room:
+1. Go to the **[Releases](../../releases)** page of this repository.
+2. Download the latest `.zip` release file.
+3. Extract the folder to your computer.
+4. Double-click the executable file (e.g., `Project VHHH.exe`) to start the simulator. No Python installation is required!
+
+### Option 2: Run from Source Code
+For developers or users on other operating systems (macOS/Linux):
+1. Clone this repository to your local machine:
+   git clone [https://github.com/ProBeekeeper/project-vhhh.git](https://github.com/ProBeekeeper/project-vhhh.git)
+   cd project-vhhh
+2. Ensure you have Python 3.9 or newer installed. Install the required dependencies:
+   pip install arcade pyttsx3
+3. python main.py
 
 ---
 
